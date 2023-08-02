@@ -1,16 +1,26 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', arial;
+    background-color: rgb(101, 128, 151);
 }
 
 body {
     display: flex;
     flex-direction: column;
+    gap: 60px;
+}
+
+/* header */
+.header {
+    text-align: center;
+    margin-top: 20vh;
 }
 
 /* game options */
 .options {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -19,4 +29,18 @@ body {
 .options img {
     width: 200px;
     height: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+.options img:hover {
+    width: 250px;
+    height: 250px;
+}
+
+/* display */
+.display {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
 }
